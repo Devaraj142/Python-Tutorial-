@@ -1,1 +1,52 @@
-
+Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2
+2
+>>> 3
+3
+>>> 2+2
+4
+>>> 4+3
+7
+>>> 7*5+2
+37
+>>> (37-30)*3
+21
+>>> 20/4
+5.0
+>>> 19/4
+4.75
+>>> 19//4
+4
+>>> #In up operation,It discard the factorial and returns integer only but the normal division always result the flot number
+>>> 19%4
+3
+>>> #In the above operation,It shows the reminder value only.
+>>> #In python which is possible to use (**) operator to calculate powers.example
+>>> 5**2
+25
+>>> 2**7 #2 to the power of 7
+128
+>>> #there is a equal sign is used to assign values to a variable."Variable" is nothing but it stores the value in that memory
+>>> radius=5
+>>> diameter=10
+>>> diameter/radius
+2.0
+>>> diameter//radius
+2
+>>> diameter%radius
+0
+>>> #this is how the arithmetic operations are done by using the variables.
+>>> #if the variable is not defined python throws a error,example
+>>> num
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'num' is not defined. Did you mean: 'sum'?
+>>> #we can continue the basic operation with the answer of other to defined variable's
+>>> radius=5
+>>> diameter=10
+>>> diameter+radius
+15
+>>> diameter*_
+150
+>>>
