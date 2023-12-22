@@ -1,5 +1,0 @@
->>> if_your_confidence_is_good = True
->>> if if_your_confidence_is_good:
-...     print("Don\'t look for Advice")
-...
-Don't look for Advice
