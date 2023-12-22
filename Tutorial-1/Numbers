@@ -50,3 +50,5 @@ NameError: name 'num' is not defined. Did you mean: 'sum'?
 >>> diameter*_
 150
 >>>
+
+These are the basic operations that are used in python interpreter for a beginner level there are lot of operations methode are explore in upcomming by using some built-in, functions, OOPs like that.
