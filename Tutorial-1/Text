@@ -1,1 +1,63 @@
-
+Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> #this python can repersent by type str() so called as string,as well as numbers and it include's character's "!" words "Wolf" name "Python" sentence "Here we learn about string" and etc., they can be enclosed with " ".
+>>> name="Python"
+>>> name
+'Python'
+>>> #using escape char in interpreter can put things as it is and when you use print the function produces the output more readable, by omitting the enclosed quotes.
+>>> s="This is Python.\n We use this language for many purpose"
+>>> s
+'This is Python.\n We use this language for many purpose'
+>>> print(s)
+This is Python.
+ We use this language for many purpose
+>>> #from the above code we get the clear example how the string work in the interpreter when it call and after it called by print function it is built-in function.
+>>> #if you don't want the escape char \ prefaced, we use ther raw string method. we use like we denote the 'r' in the print function, for example
+>>> print(r'c:\users\user')
+c:\users\user
+>>> #there is another trick we can use in string to join some string literal in same line, two or more string literals(i.e was ones enclosed between quotes)next to each other are automatically concatenated,
+>>> 'py' 'thon'
+'python'
+>>> 'python' 'is used for' 'several purpose'
+'pythonis used forseveral purpose'
+>>> suffix='thon'
+>>> 'py'+suffix
+'python'
+>>> #slicing indicates have useful defaults; an omitted first index defaults at zero, an omitted second index defaults to size of the string being sliced.
+>>> word='python'
+>>> word[:2]
+'py'
+>>> word[2:]
+'thon'
+>>> word[0:4]
+'pyth'
+>>> #this is how the slice works, the start always include and the end is always exclude.
+>>> #s=s[:i]+s[i:]
+>>> word[:3]+word[3:]
+'python'
+>>> #while you call the index that is too long that dosen't exist, it will throws you a error.
+>>> word[10]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> #however when we use out of range the indexes with slice operation python will handel it gracefully.
+>>> word[3:10]
+'hon'
+>>> word[10:]
+''
+>>> #some data types has some constraints in python, In string we cannot modify it. It is immutable, if you assign some value at the index position in the e
+xisting string it results error.
+>>> word[1]=l
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'l' is not defined
+>>> word[0]=l
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'l' is not defined
+>>> #insted of doing this we can concatenate the new char with the existing one using slicing method, For example
+>>> 'l' + word[1:]
+'lython'
+>>> #and we have another functionality like count the length of the string that we defined using the built-in function called "len"
+>>> len(word)
+6
