@@ -61,3 +61,5 @@ NameError: name 'l' is not defined
 >>> #and we have another functionality like count the length of the string that we defined using the built-in function called "len"
 >>> len(word)
 6
+
+These are the basic knowledge that are used in python interpreter for a beginner level there are lot of operations methode are explore in upcomming by using some built-in, functions, OOPs like that.
