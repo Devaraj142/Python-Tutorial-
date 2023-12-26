@@ -1,0 +1,24 @@
+Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> #List is known as number of compound datatypes used tp group to togather.It can be seperated by comma values called items or elements between square brackets [], it can has different types of data defined by user but the items are always have the same type while execute,
+>>> even = [2,4,6,8,10]
+>>> even
+[2, 4, 6, 8, 10]
+>>> even[2]
+6
+>>> even[-2:]
+[8, 10]
+>>> even[:]
+[2, 4, 6, 8, 10]
+>>> #aslike string the list also has the slice operations to make new list with the existing,
+>>> even + [12, 15, 16, 18, 20]
+[2, 4, 6, 8, 10, 12, 15, 16, 18, 20]
+>>> #we can change the items, unlike strings its are mutable,
+>>> odd = [3,5,7,8,11]
+>>> odd
+[3, 5, 7, 8, 11]
+>>> 3*3
+9
+>>> odd[3]=9
+>>> odd
+[3, 5, 7, 9, 11]
