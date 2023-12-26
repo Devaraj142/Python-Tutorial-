@@ -13,6 +13,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> #aslike string the list also has the slice operations to make new list with the existing,
 >>> even + [12, 15, 16, 18, 20]
 [2, 4, 6, 8, 10, 12, 15, 16, 18, 20]
+
 >>> #we can change the items, unlike strings its are mutable,
 >>> odd = [3,5,7,8,11]
 >>> odd
@@ -22,3 +23,37 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> odd[3]=9
 >>> odd
 [3, 5, 7, 9, 11]
+
+>>> #you can also add new items in it, using some list methods, we can after discuss about the methods deeply just refer this as a name,
+>>> odd.append(13)
+>>> odd.append(15)
+>>> odd
+[3, 5, 7, 9, 11, 13, 15]
+>>> #likewise append() there some other operations are there like insert(), delete(), etc.,
+
+>>> #using slice we can change the list elements,
+>>> names = ['python', 'java', 'c', 'cpp', 'javascript']
+>>> names
+['python', 'java', 'c', 'cpp', 'javascript']
+>>> names[1:4]=['HTML', 'CSS']
+>>> names
+['python', 'HTML', 'CSS', 'javascript']
+
+>>> #we have use the list 2D in this format
+>>> a=['A', 'B', 'C']
+>>> num=[1, 2, 3]
+>>> x=[a,num]
+>>> x
+[['A', 'B', 'C'], [1, 2, 3]]
+>>> x[0]
+['A', 'B', 'C']
+>>> x[1]
+[1, 2, 3]
+>>> x[0][1]
+'B'
+>>> x[1][1]
+2
+>>> len(x[0])
+3
+>>> len(x[1])#likewise string list also has a bulit-in function called len() to count the length of the elements
+3
