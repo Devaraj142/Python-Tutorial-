@@ -1,1 +1,49 @@
+Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> #CONTROL FLOW STATEMENTS
+>>> #if statements for well-known statement for other language programmers who known about C,CPP,Java, etc., it is the statement like you have options to run the body of code if the given condition is true, let's see an example
+>>> if 6%2==0:
+...     print("6 is even number")
+...
+6 is even number
+>>> if 3%2==0:
+...     print("6 is even number")
+... else:
+...     print("6 is even number")
+...
+6 is even number
+>>> if 3%2==0:
+...     print("3 is even number")
+... else:
+...     print("3 is not a even number")
+...
+3 is not a even number
+>>> #here from the above example we see that if the statement is correct it will run the body of it's code and the other example if the statement is correct it will run the body of it's code or else the else block of code will run
+>>> #there is another option to solve the multiple condition statement to check the code constrain
+ts like how the switch case does, it will known as if...elif...else... , let's see the example for
+that
+>>> n=0
+>>> if n>0:
+...     print(n," is a positive number")
+... elif n<0:
+...     print(n," is a negative number")
+... elif n==1:
+...     print(n," is One")
+... else:
+...     print(n," is Zero)
+  File "<stdin>", line 8
+    print(n," is Zero)
+            ^
+SyntaxError: unterminated string literal (detected at line 8)
+>>> if n>0:
+...     print(n," is a positive number")
+... elif n<0:
+...     print(n," is a negative number")
+... elif n==1:
+...     print(n," is One")
+... else:
+...     print(n," is Zero")
+...
+0  is Zero
+
 
