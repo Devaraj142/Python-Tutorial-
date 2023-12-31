@@ -79,3 +79,49 @@ Java 4
 Python 6
 JavaScript 10
 Php 3
+>>> #using this we can modify the code, sometimes it's too tricky to copy a collection or to c
+reate a new collection while iterating,
+>>> users = {'Hans': 'active', 'Éléonore': 'inactive', '景太郎': 'active'}
+>>> #iterate over a copy
+>>> for user,status in users.copy().items():
+...     if status == 'inactive':
+...             del users[user]
+...
+>>> users
+{'Hans': 'active', '景太郎': 'active'}
+>>> #also we can create a new collection of items
+>>> for user, status in users.items():
+...     if status == 'active':
+...             active_users[user]=status
+...
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+NameError: name 'active_users' is not defined
+>>> active_users = {}
+>>> for user, status in users.items():
+...     if status == 'active':
+...             active_users[user]=status
+...
+>>> active_users
+{'Hans': 'active', '景太郎': 'active'}
+>>> #using for loop you can also iterate some string
+>>> example = 'python'
+>>> for each in example:
+...     print(i)
+...
+Php
+Php
+Php
+Php
+Php
+Php
+>>> #sorry i used 'i' instead of each
+>>> for each in example:
+...     print(each)
+...
+p
+y
+t
+h
+o
+n
