@@ -47,3 +47,35 @@ SyntaxError: unterminated string literal (detected at line 8)
 0  is Zero
 
 
+>>> #for loop is differ from the other programming languages like c,cpp,java,pascal,etc., In Cfor loop has a ability to define both the iteration step and halting condition but in the python's for statement iterates over the item of any sequence in the order that they print in the sequence, a list or a string For Example
+>>> name=["C", "CPP", "Java", "Python", "JavaScript", "Php"]
+>>> for i in name:
+...     print(i)
+...
+C
+CPP
+Java
+Python
+JavaScript
+Php
+>>> #this is how for loop work's for example let me put this in a simple english word terms, like
+>>> for each in name:
+...     print(each)
+...
+C
+CPP
+Java
+Python
+JavaScript
+Php
+>>> #using for loop let we print the each items in the sequence order what exactly in the user
+ defined over in the variable 'name'
+>>> for each in name:
+...     print(each, len(each))
+...
+C 1
+CPP 3
+Java 4
+Python 6
+JavaScript 10
+Php 3
