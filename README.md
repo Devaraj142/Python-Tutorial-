@@ -11,5 +11,7 @@
 1. Control flow statements
    * if statemet
    * for statement
-   * while statement
+   * Break statement
+   * Continue statement
+   * Pass statement
 1. Functions 
