@@ -47,6 +47,7 @@ SyntaxError: unterminated string literal (detected at line 8)
 0  is Zero
 
 
+
 >>> #for loop is differ from the other programming languages like c,cpp,java,pascal,etc., In Cfor loop has a ability to define both the iteration step and halting condition but in the python's for statement iterates over the item of any sequence in the order that they print in the sequence, a list or a string For Example
 >>> name=["C", "CPP", "Java", "Python", "JavaScript", "Php"]
 >>> for i in name:
@@ -127,6 +128,7 @@ o
 n
 
 
+
 >>> #before the next control statement you need to known the built-in function called, range()let's how to use range() while coding
 >>> for i in range(5):
 ...     print(i)
@@ -161,6 +163,7 @@ NameError: name 'a' is not defined
 3 high-level
 4 programming
 5 language
+
 
 
 >>> #Break statement
@@ -208,3 +211,16 @@ se that,
 8  is a First Even number
 9  is not a Even number
 >>> #the statement will continue the process after the need output executed
+
+>>> if 2%2==0:
+...     pass
+...
+>>> #pass statement, it does nothing when executed and is typically used as a placeholder where syntactically some code is required, but no action is desired or necessary.
+KeyboardInterrupt
+>>> def my_func():
+...     pass
+...
+>>> my_func()
+>>>
+>>> #see it's does nothing, that's how the pass statement wor
+ks
