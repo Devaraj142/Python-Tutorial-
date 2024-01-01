@@ -125,3 +125,40 @@ t
 h
 o
 n
+
+
+>>> #before the next control statement you need to known the built-in function called, range()let's how to use range() while coding
+>>> for i in range(5):
+...     print(i)
+...
+0
+1
+2
+3
+4
+>>> #If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy
+>>> #The created sequence never includes the supplied end point; range(10) produces 10 values, which are the acceptable indices for elements in a sequence with length 10. You can provide a different increment—even a negative one; this is frequently referred to as the "step"—or start the range at a different integer
+>>> list(range(1,10))
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> list(range(1,10,2))
+[1, 3, 5, 7, 9]
+>>> list(range(-10,-100,-20))
+[-10, -30, -50, -70, -90]
+>>> #if you are to iterate over the indices of a sequence, combine using range() and len() two built-in functions
+>>> sequence = ['Python', 'is', 'a', 'high-level', 'programming', 'language']
+>>> for i in range(len(sequence)):
+...     print(i, a[i])
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+NameError: name 'a' is not defined
+>>> for i in range(len(sequence)):
+...     print(i, sequence[i])
+...
+0 Python
+1 is
+2 a
+3 high-level
+4 programming
+5 language
+
