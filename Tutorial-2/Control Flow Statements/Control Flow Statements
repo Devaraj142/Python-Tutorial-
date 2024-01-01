@@ -192,3 +192,19 @@ se that,
 3  is not a Even number
 4  is a First Even number
 
+>>> #likewise how the continue statement used for
+>>> for i in range(3,10):
+...     if i%2==0:
+...             print(i, " is a First Even number")
+...             continue
+...     else:
+...             print(i, " is not a Even number")
+...
+3  is not a Even number
+4  is a First Even number
+5  is not a Even number
+6  is a First Even number
+7  is not a Even number
+8  is a First Even number
+9  is not a Even number
+>>> #the statement will continue the process after the need output executed
