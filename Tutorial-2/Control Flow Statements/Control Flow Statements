@@ -162,3 +162,33 @@ NameError: name 'a' is not defined
 4 programming
 5 language
 
+
+>>> #Break statement
+>>> #In the for loop and while loop the break statement breaks out the innermost thing
+>>> #it's the proper usage is,if you need some of the outcome is enough from the code you should use break, it'll break the execution while the need thing executed then the rest will terminate
+>>> for i in range(3,10):
+...     if i%2==0:
+...             print(i, " is a First Even number")
+...     else:
+...             print(i, " is not a Even number")
+...
+3  is not a Even number
+4  is a First Even number
+5  is not a Even number
+6  is a First Even number
+7  is not a Even number
+8  is a First Even number
+9  is not a Even number
+>>> #this how actual code work but if need to end the executi
+n after the first two outcome, using break statement we can u
+se that,
+>>> for i in range(3,10):
+...     if i%2==0:
+...             print(i, " is a First Even number")
+...             break
+...     else:
+...             print(i, " is not a Even number")
+...
+3  is not a Even number
+4  is a First Even number
+
