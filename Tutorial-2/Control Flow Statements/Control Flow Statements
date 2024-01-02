@@ -222,5 +222,4 @@ KeyboardInterrupt
 ...
 >>> my_func()
 >>>
->>> #see it's does nothing, that's how the pass statement wor
-ks
+>>> #see it's does nothing, that's how the pass statement works
