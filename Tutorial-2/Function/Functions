@@ -1,0 +1,28 @@
+>>> #functions what does function means let me explain it
+>>> def add(x,y):
+...     z=x+y
+...     return z
+...
+>>> #here the above code was called as function def is a keyword known as definition and the add is a function name wheather you call it as sum,addition or something else that what ever you want to give the name of it and the block in the () known as parameter and after the colon block of code is the codewill do the excecution while you call the function,
+>>> #I will give a example for how it will work
+>>> add(4,5)
+9
+>>> #this is how the code will work, while the function called and arguments passed in the parameter placeholder it will return the sum value
+>>> add("hai","developers")
+'haidevelopers'
+>>> #like this it will excecute the code
+>>> #if you fail to pass the aruguments it throws you in error
+>>> add()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: add() missing 2 required positional arguments: 'x' and 'y'
+>>> add(4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: add() missing 1 required positional argument: 'y'
+>>> add(,5)
+  File "<stdin>", line 1
+    add(,5)
+        ^
+SyntaxError: invalid syntax
+>>> #like this it will throws you in the error
