@@ -44,3 +44,20 @@ TypeError: add() missing 2 required positional arguments: 'x' and 'y'
 >>> print(ad)
 None
 >>> #by using print statement we can see the value of none otherwise the value just retrun to the variable that called and that store in the current symbol table
+>>> #it is simple to adding a list of numbers by adding additional code block with this
+>>> pack=[]
+>>> def calculator(a,b):
+...     s=a+b
+...     d=a-b
+...     m=a*b
+...     div=a//b
+...     pack.append(s)
+...     pack.append(d)
+...     pack.append(m)
+...     pack.append(div)
+...     return pack
+...
+>>> calculator(5,6)
+[11, -1, 30, 0]
+>>> calculator(6,4)
+[11, -1, 30, 0, 10, 2, 24, 1]
