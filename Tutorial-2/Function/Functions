@@ -26,3 +26,21 @@ TypeError: add() missing 1 required positional argument: 'y'
         ^
 SyntaxError: invalid syntax
 >>> #like this it will throws you in the error
+>>> add
+<function add at 0x0000026E121D3E20>
+>>> #as a user defined funtion other names can also point to that same function object and can be used to access
+>>> join = add()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: add() missing 2 required positional arguments: 'x' and 'y'
+>>> join= add
+>>> join(5,8)
+13
+>>> #In sometimes fucntions without return statement do return value, that was called None.It's a built-in-name
+>>> def add_return_none(x,y):
+...     result=x+y
+...
+>>> ad=add_return_none(9,8)
+>>> print(ad)
+None
+>>> #by using print statement we can see the value of none otherwise the value just retrun to the variable that called and that store in the current symbol table
