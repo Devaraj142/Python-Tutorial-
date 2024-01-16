@@ -24,3 +24,21 @@ Do you need to write sample test one morem
 Please try again!
 Do you need to write sample test one moreyes
 True
+
+
+>>> #2 In this form function can also be called using keyword arguments for the  function(keyword=argumnet)
+>>> def car_robot(name, speed='5 km/hr', destination='coffee shop'):
+...     print('The Agent', name, 'Reach the', destination, 'by', speed, 'speed')
+...
+>>> #you can call the function and pass the argument by using the keyword like this,
+>>> car_robot('finn')
+The Agent finn Reach the coffee shop by 5 km/hr speed
+>>> car_robot('finn', destination='park')
+The Agent finn Reach the park by 5 km/hr speed
+>>> car_robot('finn', destination='park', speed='4 km/hr')
+The Agent finn Reach the park by 4 km/hr speed
+>>> car_robot('finn', destination='park','4 km/hr')
+  File "<stdin>", line 1
+    car_robot('finn', destination='park','4 km/hr')
+                                                  ^
+SyntaxError: positional argument follows keyword argument
