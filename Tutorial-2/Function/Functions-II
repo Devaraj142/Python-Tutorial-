@@ -1,1 +1,6 @@
-
+>>> #here we will defining the argument values in the python functions, that are in the 3 forms
+>>> #1 default argument values
+>>> #2 keyword argument
+>>> #3 special parameters
+>>>
+>>> #1 this form is to specify a default value for one or more arguments and it creates a function that can be called with the fewer arguments,
