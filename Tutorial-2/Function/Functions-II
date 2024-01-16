@@ -37,8 +37,18 @@ The Agent finn Reach the coffee shop by 5 km/hr speed
 The Agent finn Reach the park by 5 km/hr speed
 >>> car_robot('finn', destination='park', speed='4 km/hr')
 The Agent finn Reach the park by 4 km/hr speed
->>> car_robot('finn', destination='park','4 km/hr')
+
+>>> # the above method will be invalid if you use the following commands
+>>> car_robot()#argument missing
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: car_robot() missing 1 required positional argument: 'name'
+>>> car_robot('finn',name='finn')#duplicate argument with same parameter keyword name
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: car_robot() got multiple values for argument 'name'
+>>> car_robot(name='finn', '4 km/hr')#non-keyword argument followed by the keyword agrumnet
   File "<stdin>", line 1
-    car_robot('finn', destination='park','4 km/hr')
-                                                  ^
+    car_robot(name='finn', '4 km/hr')#non-keyword argument followed by the keyword agrumnet
+                                    ^
 SyntaxError: positional argument follows keyword argument
