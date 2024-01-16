@@ -89,3 +89,46 @@ special argumenst: -> def fun(position arg1,postion arg2,        /,         post
 (A)  :-> if the symbols "/" and "*" are not in the function argumentmay be passed to a function by postional or keyword argument.
 (B)  :-> if the parameter is palced before the symbol "/"(forward slash) it is known as postional-only-argument.This is logically seperate the postional-only-arguments from the rest of the parameters.if there is no "/" in the function it's not called as postional-only-arguments.
 (c)  :-> if the parameter is palced after the symbol "*"(asterisk) it is known as keyword-only-argument.This is logically seperate the keyword-only-arguments from the rest of the parameter.if there is no"*" in the function it's not called as keyword-only-arguments.
+
+>>> def pos_key(arg):
+...     print(arg)
+...
+>>> def pos_only(arg,/):
+...     print(arg)
+...
+>>> def key_only(*,arg):
+...     print(arg)
+...
+>>> def all(pos_arg,/,pos_key,*,key_arg):
+...     print(pos_arg,pos_key,key_arg)
+...
+>>> pos_key('python')
+python
+>>> pos_key(arg='python')
+python
+>>> pos_only('python')
+python
+>>> pos_only(arg='python')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: pos_only() got some positional-only arguments passed as keyword arguments: 'arg'
+>>> key_only(arg='python')
+python
+>>> key_only('python')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: key_only() takes 0 positional arguments but 1 was given
+>>> all('C','python','java')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: all() takes 2 positional arguments but 3 were given
+>>> all('C','python',key_arg='java')
+C python java
+>>> all('C',pos_key='python',key_arg='java')
+C python java
+>>> all(pos_arg='C',pos_key='python',key_arg='java')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: all() got some positional-only arguments passed as keyword arguments: 'pos_arg'
+>>> all('C',pos_key='python',key_arg='java')
+C python java
