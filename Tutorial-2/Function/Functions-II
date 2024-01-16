@@ -81,4 +81,11 @@ how much the suit cost?
 ******************************
 cookies : 5 packets
 chicken : 4 Kg
-#let get into more clear explaination about what are these special arguments
+>>>#let get into more clear explaination about what are these special arguments
+
+                                          (A)             (SPECIAL SYMBOL)               (B)            (SPECIAL SYMBOL)                     (C)
+special argumenst: -> def fun(position arg1,postion arg2,        /,         postion or keyword argument,       *,              keyword arg1,keyword arg2): 
+
+(A)  :-> if the symbols "/" and "*" are not in the function argumentmay be passed to a function by postional or keyword argument.
+(B)  :-> if the parameter is palced before the symbol "/"(forward slash) it is known as postional-only-argument.This is logically seperate the postional-only-arguments from the rest of the parameters.if there is no "/" in the function it's not called as postional-only-arguments.
+(c)  :-> if the parameter is palced after the symbol "*"(asterisk) it is known as keyword-only-argument.This is logically seperate the keyword-only-arguments from the rest of the parameter.if there is no"*" in the function it's not called as keyword-only-arguments.
