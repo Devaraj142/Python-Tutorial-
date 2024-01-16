@@ -52,3 +52,33 @@ TypeError: car_robot() got multiple values for argument 'name'
     car_robot(name='finn', '4 km/hr')#non-keyword argument followed by the keyword agrumnet
                                     ^
 SyntaxError: positional argument follows keyword argument
+
+
+ #3 i) this is a special arguments pass to function. first (**keywordarguments) in this type of argument, it recives a dictionary containing keyword argumnets, and accepts for those corresponding to a parameter name.
+>>> # ii) second (*arguments) in this type of argument, it recives a tuple containing postional arguments beyond the parameter list.
+>>> # and the important syntax for declear this you must place it correctly it must be looks like this,
+>>> #def fun(*arguments, **keywordarguments) the (*) should appear before (**), let's see the example for this
+>>> def shop(name,*arguments,**keywordarguments):
+...     print("Hai",name,"sir!")
+...     print("How can I help You",name)
+...     for argument in arguments:
+...         print(argument)
+...     print("*"*30)
+...     for key in keywordarguments:
+...         print(key,":",keywordarguments[key])
+...
+>>> shop("burg",
+...      "I need a cup of coffee",
+...      "which one is good",
+...      "how much the suit cost?",
+...      cookies="5 packets",
+...      chicken="4 Kg")
+Hai burg sir!
+How can I help You burg
+I need a cup of coffee
+which one is good
+how much the suit cost?
+******************************
+cookies : 5 packets
+chicken : 4 Kg
+#let get into more clear explaination about what are these special arguments
