@@ -81,7 +81,7 @@ how much the suit cost?
 ******************************
 cookies : 5 packets
 chicken : 4 Kg
->>>#let get into more clear explaination about what are these special arguments
+>>>#let get into more clear explaination about what are these special arguments.
 
                                           (A)             (SPECIAL SYMBOL)               (B)            (SPECIAL SYMBOL)                     (C)
 special argumenst: -> def fun(position arg1,postion arg2,        /,         postion or keyword argument,       *,              keyword arg1,keyword arg2): 
