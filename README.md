@@ -19,3 +19,6 @@
    * Function
    * Function-II
    * Function-III
+## Tutorial-3
+
+1. Data Types and Structure
