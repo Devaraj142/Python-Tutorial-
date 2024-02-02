@@ -19,6 +19,15 @@
    * Function
    * Function-II
    * Function-III
+
 ## Tutorial-3
 
-1. Data Types and Structure
+1. Data Structure
+   * Stack Using List Methods
+   * Queue Using List Methods
+   * List Comprehension
+   * Tuples (or) Sequences
+   * Sets
+   * Dictionary
+   * Looping Techniques (additional Topic But related)
+   * 
