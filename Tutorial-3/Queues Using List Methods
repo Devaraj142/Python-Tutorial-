@@ -1,4 +1,4 @@
-QUEUE:
+QUEUE:(FIRST IN FIRST OUT-[FIFO])
 In list their methods to append and pop at the last is the fast but in the beginning is slow . so we use collections modules to do effective operations.
 
 We can use Queus by list Methods and a deque module from collections file from that you can use two methods to do queue data structure operations.
