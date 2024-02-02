@@ -1,3 +1,4 @@
+STACKS:(LAST IN FIRST OUT-[LIFO])
 We can use the stack data structure by having the list methods. It's majorly used by 2 methods that are 
 i)  list.append(x)  => add an item to the end of the lsit that was a equivalent to a[len(a):]=[x]
 ii) list.pop([i])   => remove the item at the given position in the list, and return it. for example, list.pop() it removes and retunrs the last item in the list.
