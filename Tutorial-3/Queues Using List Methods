@@ -1,4 +1,11 @@
-We can use Queus by list Methods and a deque module from collections file 
+QUEUE:
+In list their methods to append and pop at the last is the fast but in the beginning is slow . so we use collections modules to do effective operations.
+
+We can use Queus by list Methods and a deque module from collections file from that you can use two methods to do queue data structure operations.
+
+i)   queue.appendleft(x)                   => we can use the appendleft in the queue data structure to enqueue the item in the origin adderss in the queue.
+ii)  queue.popleft([i])                    => we can use the popleft in the queue data structure to dequeue the item in the origin address in the queue.
+iii) queue.append(x) (and) queue.pop([i])  => we can use this as how we used in stacks. the both will used to add the item in the queue at the end and will remove the given addressed value in the queue.
 
 >>> from collections import deque
 >>> queue=deque(['python','java','cpp','c'])
