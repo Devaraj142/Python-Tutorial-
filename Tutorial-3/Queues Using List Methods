@@ -1,1 +1,16 @@
+We can use Queus by list Methods and a deque module from collections file 
 
+>>> from collections import deque
+>>> queue=deque(['python','java','cpp','c'])
+>>> queue.append('JavaScript')
+>>> queue.appendleft('C#')
+>>> queue
+deque(['C#', 'python', 'java', 'cpp', 'c', 'JavaScript'])
+>>> print(queue)
+deque(['C#', 'python', 'java', 'cpp', 'c', 'JavaScript'])
+>>> queue.pop()
+'JavaScript'
+>>> queue.popleft()
+'C#'
+>>> queue
+deque(['python', 'java', 'cpp', 'c'])
