@@ -25,7 +25,6 @@
 1. Data Structure
    * Stack Using List Methods
    * Queue Using List Methods
-   * List Comprehension
    * Tuples (or) Sequences
    * Sets
    * Dictionary
