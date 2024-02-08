@@ -1,1 +1,26 @@
-
+>>> #tuple or sequences
+>>> #it consists of no.of.values seperated by commas of instance:
+>>> order=12,34.2,"sequal"
+>>> order
+(12, 34.2, 'sequal')
+>>> type(order)
+<class 'tuple'>
+>>> add = order,('Hello', 22, 'A+B')
+>>> add
+((12, 34.2, 'sequal'), ('Hello', 22, 'A+B'))
+>>> #by like you can nested the two sequences into one sequence or tuple
+>>> #The tuples are immutable but the objects isn't the objects in the tuples are mutable
+>>> add[1]=order
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> add[1]
+('Hello', 22, 'A+B')
+>>> #you can address or access the value but can't assign or change it.
+>>> #empty tuples are constructed by an empty pair of parantheses; a tuple with one item followed by the comma it's repersented as tuple
+>>> empty=()
+>>> n=1,
+>>> type(empty)
+<class 'tuple'>
+>>> type(n)
+<class 'tuple'>
