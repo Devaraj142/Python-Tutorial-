@@ -1,0 +1,21 @@
+>>> #python support the set structured data type
+>>> #it is unorderd collection with no duplicate elements. you can eliminate the duplicate values in set data type.it supports operations like union"|", intersection"&", difference"-", symmentric"^" and etc.,
+>>> #we can declear set like this
+>>> a=set([1,2,3,4,5])
+>>> a
+{1, 2, 3, 4, 5}
+>>> #or
+>>> b=set('12345')
+>>> b
+{'2', '1', '4', '5', '3'}
+>>> #you can pass the argument as a iterable object
+>>> c=set('324535221')
+>>> c
+{'2', '1', '4', '5', '3'}
+>>> #it's eliminates the duplicate values
+>>> b-c
+set()
+>>> b|c
+{'2', '1', '4', '5', '3'}
+>>> c^b
+set()
