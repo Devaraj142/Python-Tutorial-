@@ -1,1 +1,33 @@
-
+>>> #It's a another data type. unlike sequences, which are indexed by a range of numbers, dictionary is indexed by range of numbers. It is immutable data type
+>>> # synatax of dict => {key:value}
+>>> details={'kenny':95,'martin':79,'lozzy':98}
+>>> details
+{'kenny': 95, 'martin': 79, 'lozzy': 98}
+>>> details['martin']
+79
+>>> details['martin']=78
+>>> details
+{'kenny': 95, 'martin': 78, 'lozzy': 98}
+>>> details['jhon']=100
+>>> details
+{'kenny': 95, 'martin': 78, 'lozzy': 98, 'jhon': 100}
+>>> details.keys()
+dict_keys(['kenny', 'martin', 'lozzy', 'jhon'])
+>>> details.values()
+dict_values([95, 78, 98, 100])
+>>> details.get('leny')
+>>> details.get('jhon')
+100
+>>> details.items()
+dict_items([('kenny', 95), ('martin', 78), ('lozzy', 98), ('jhon', 100)])
+>>> formo=details.copy()
+>>> formo
+{'kenny': 95, 'martin': 78, 'lozzy': 98, 'jhon': 100}
+>>> details['helen']=76
+>>> formo
+{'kenny': 95, 'martin': 78, 'lozzy': 98, 'jhon': 100}
+>>> details
+{'kenny': 95, 'martin': 78, 'lozzy': 98, 'jhon': 100, 'helen': 76}
+>>> formo.clear()
+>>> formo
+{}
