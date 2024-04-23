@@ -1,0 +1,239 @@
+# OOPS:
+
+1. Classes 
+2. Objects
+3. class constructor
+4. Inheritance
+5. Encapsulation
+6. Polymorphism 
+
+## Classes:
+
+   Classes are the Builder there were building data and functionality togather . Creating a new class creates a new type of object, allowing  new instance of the type to be made. Each instance can have attributes attached to it for maintaining its state.
+
+we can define the class as →
+
+```python
+class Project:
+	pass
+```
+
+## Objects:
+
+The instance we can define as →
+
+obj = Project()
+
+this is known as instance and the project class blueprint can be used by obj named variable object. if you print the obj like print(obj) it will print the address of the instance where that actually stored.
+`<__main__.Dog object at 0x106702d30>`  like this.
+
+## Class Constructor :
+
+We can initialize values using the constructors. The constructors function is known as __init__( )
+
+This function is called whenever a new object of the class is instantiated.
+
+The constructor above initializes the value of the name attribute.
+
+We have used the `self.name` to refer to the name attribute of the bike1 object.
+
+If we use a constructor to initialize values inside a class, we need to pass the corresponding value during the object creation of the class.
+
+## Inheritance:
+
+- Single Level Inheritance
+- Multi Level Inheritance
+- Hierarchical Inheritance
+
+### Single Level Inheritance:
+
+```python
+class Cse:
+	def dep(self):
+		print(”This projects are full of cse students”)
+class Project(cse):
+	def __init__(self, name):
+		self.name = name
+	def title(self):
+		print(”The Project title is :”, self.name )
+
+project1=Project(”CV”)
+
+project1.dep()
+
+#it will print → This projects are full of cse students
+
+project1.title()
+
+#it will print → The Project title is : CV
+```
+
+This is how the single level inheritance will work in python oops concept the project class will inherit  the Cse class and we can access the all attributes and methods in the Cse class by using the Project class,  
+
+### Multi Level Inheritance:
+
+```python
+class College:
+	def students(self):
+		print("There are 5 deptarment students are in the college")
+class Dept:
+	def cse(self):
+		print("There are 3rd year students in this program")
+class Project(collage,Dept):
+	def exc(self):
+		print("This will be a derived class of the both above class")
+
+#college => Super class
+#Dept    => Secondary class (or) deriverd class 1 (features of super class + derived class 1)
+#Project => Thrid class (or) deriverd class 2 (features of super class + derived class 1 + derived class 2)
+
+clg=Dept()
+clg.students()#prints the "there are 5 depratment students are in the college"
+
+clg.cse()
+
+clg= College()
+clg.cse()#it will puts you in the error that the attribute is not defined in College class
+```
+
+This is how the multi level class inheritance will work in python.  the above example are be useful to the multi level inheritance.
+
+### Multiple Inheritance:
+
+```python
+class College:
+	def students(self):
+		print("There are 5 deptarment students are in the college")
+class Dept:
+	def cse(self):
+		print("There are 3rd year students in this program")
+class Project(College, Dept):
+	pass
+	#def exc(self):
+		#print("This will be a derived class of the both above class")
+
+#college => Super class
+#Dept    => Secondary class (or) deriverd class 1 
+#Project => Thrid class (or) deriverd class 2 (features of super class + derived class 1 + derived class 2)
+
+```
+
+This is how the multiple  inheritance will work in python.  the above example are be useful to the multiple inheritance.
+
+### Hierarchical inheritance:
+
+Hierarchical inheritance is a type of inheritance in which a single base class is inherited by multiple derived classes. This creates a hierarchy of classes where one base class serves as a common ancestor for several child classes. Each child class inherits the properties and behaviors of the base class and may have additional features specific to itself.
+
+```python
+# Base class
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        pass  # The base class doesn't define a specific sound for all animals
+
+# Derived classes
+class Dog(Animal):
+    def speak(self):
+        return f"{self.name} says Woof!"
+
+class Cat(Animal):
+    def speak(self):
+        return f"{self.name} says Meow!"
+
+class Duck(Animal):
+    def speak(self):
+        return f"{self.name} says Quack!"
+
+# Creating instances of the derived classes
+dog = Dog("Buddy")
+cat = Cat("Whiskers")
+duck = Duck("Daffy")
+
+# Calling the speak method for each instance
+print(dog.speak())  # Output: Buddy says Woof!
+print(cat.speak())  # Output: Whiskers says Meow!
+print(duck.speak())  # Output: Daffy says Quack!
+
+```
+
+In this example, **`Animal`** is the base class, and **`Dog`**, **`Cat`**, and **`Duck`** are derived classes. Each derived class inherits the **`name`** attribute from the base class **`Animal`** and provides its own implementation of the **`speak`** method. The **`speak`** method in the base class is marked with **`pass`** since it doesn't have a specific implementation for all animals.
+
+Now, you can create instances of each derived class and call the **`speak`** method to see how each animal "speaks."
+
+### Encapsulation:
+
+Encapsulation is the concept of bundling the data (attributes) and the methods (functions) that operate on the data into a single unit called a class. It helps in hiding the internal implementation details of an object and exposing only what is necessary. In Python, encapsulation is achieved using private and public access specifiers.
+
+```python
+class Car:
+    def __init__(self, make, model):
+        self.__make = make  # private attribute
+        self.__model = model  # private attribute
+        self.__speed = 0  # private attribute
+
+    def accelerate(self):
+        self.__speed += 10 #(+=)=> self.__speed+= 10 ==> self.__speed=self.__speed+10
+ 
+    def brake(self):
+        if self.__speed >= 10: 
+            self.__speed -= 10 #self.__speed=10-10=0
+        else:
+            self.__speed = 0
+
+    def get_speed(self):
+        return self.__speed
+
+# Creating an instance of the Car class
+my_car = Car("Toyota", "Camry")
+
+# Accessing public methods to interact with private attributes
+my_car.accelerate()
+print("Current speed:", my_car.get_speed())
+
+my_car.brake()
+print("Current speed after braking:", my_car.get_speed())
+
+```
+
+In this example, the attributes **`__make`**, **`__model`**, and **`__speed`** are private (denoted by the double underscores), and their access is restricted to within the class. Public methods like **`accelerate`**, **`brake`**, and **`get_speed`** are provided to interact with these private attributes.
+
+### Polymorphism:
+
+Polymorphism allows objects of different types to be treated as objects of a common type. In Python, polymorphism is often achieved through method overriding and duck typing.
+
+```python
+class Animal:
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+
+class Duck(Animal):
+    def speak(self):
+        return "Quack!"
+
+# Function that uses polymorphism
+def animal_sound(animal):
+    return animal.speak()
+
+# Creating instances of different classes
+dog = Dog()
+cat = Cat()
+duck = Duck()
+
+# Using the same function with different types of objects
+print(animal_sound(dog))  # Output: Woof!
+print(animal_sound(cat))  # Output: Meow!
+print(animal_sound(duck))  # Output: Quack!
+
+```
+
+In this example, the **`Animal`** class defines a method **`speak`**. The **`Dog`**, **`Cat`**, and **`Duck`** classes inherit from **`Animal`** and override the **`speak`** method with their own implementations. The **`animal_sound`** function can take any object of type **`Animal`** or its subclasses, demonstrating polymorphism.
